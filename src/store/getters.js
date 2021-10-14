@@ -1,8 +1,8 @@
 export default {
-  GET_COORDS: function (state) {
-    console.log(this);
-    console.log(state.coords);
-    console.log("getter-coords");
-    return state.coords;
+  GET_BOOKS: function (state) {
+    return state.books;
+  },
+  GET_BOOK: function (state) {
+    return state.book;
   },
 };
