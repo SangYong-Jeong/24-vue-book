@@ -1,5 +1,15 @@
 @import './mixins';
 
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .5s;
+}
+
 .slide-enter,
 .slide-leave-to {
   opacity: 0;
