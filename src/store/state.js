@@ -1,4 +1,4 @@
 export default {
-  books: [],
+  books: {},
   book: {},
 };
