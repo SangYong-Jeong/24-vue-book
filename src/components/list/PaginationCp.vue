@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import TableCp from "./TableCp";
+import TableCp from "@/components/TableCp.vue";
 
 export default {
   name: "PaginationCp",

@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import TrCp from "./TrCp.vue";
+import TrCp from "@/components/TrCp.vue";
 import { mapGetters } from "vuex";
 
 export default {
