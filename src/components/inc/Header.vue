@@ -2,7 +2,7 @@
   <header class="header-wrapper">
     <Logo />
     <Nav class="navi-pc" />
-    <NavMobile class="navi-mobile" />
+    <NavMobile class="navi-mo" />
   </header>
 </template>
 
@@ -29,10 +29,10 @@ export default {
       display: none;
     }
   }
-  .navi-mobile {
+  .navi-mo {
     display: none;
     @include MD {
-      display: block;
+      display: flex;
     }
   }
 }
