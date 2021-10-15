@@ -1,12 +1,12 @@
 <template>
-  <ListCp />
+  <PagerCp />
 </template>
 
 <script>
-import ListCp from "../components/ListCp";
+import PagerCp from "../components/PagerCp";
 
 export default {
-  name: "List",
-  components: { ListCp },
+  name: "Pager",
+  components: { PagerCp },
 };
 </script>
