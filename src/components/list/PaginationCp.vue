@@ -10,9 +10,10 @@ import TableCp from "@/components/common/TableCp.vue";
 export default {
   name: "PaginationCp",
   components: { TableCp },
+  props: ["page"],
   created() {
-    console.log(this);
-    this.$store.dispatch("ACT_BOOKS");
+    console.log(this.page);
+    this.$store.dispatch("ACT_BOOKS", this.page);
   },
 };
 </script>
