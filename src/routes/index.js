@@ -13,10 +13,8 @@ const routes = [
     component: List,
   },
   {
-    path: "/list/:page",
-    name: "List",
-    component: List,
-    props: true,
+    path: "/infinite",
+    redirect: "/infinite/1",
   },
   {
     path: "/infinite/:page",

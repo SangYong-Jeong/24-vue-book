@@ -23,7 +23,7 @@
 
 <script>
 import TrCp from "@/components/common/TrCp.vue";
-import PagerCp from "@/components/common/PagerCp";
+import PagerCp from "@/components/common/PagerCp.vue";
 
 import { mapGetters } from "vuex";
 
@@ -32,6 +32,12 @@ export default {
   components: { TrCp, PagerCp },
   computed: {
     ...mapGetters(["GET_BOOKS"]),
+  },
+  beforeUpdate() {
+    this.$store.dispatch("ACT_LOADING", true);
+  },
+  updated() {
+    this.$store.dispatch("ACT_LOADING", false);
   },
 };
 </script>
