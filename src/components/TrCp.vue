@@ -36,12 +36,12 @@ export default {
 
 <style lang="scss" scoped>
 tr {
-  .td {
+  td {
     vertical-align: middle;
-  }
-  .icon-cover {
-    max-width: 40px;
-    max-height: 40px;
+    .icon-cover {
+      max-width: 40px;
+      max-height: 40px;
+    }
   }
 }
 </style>
