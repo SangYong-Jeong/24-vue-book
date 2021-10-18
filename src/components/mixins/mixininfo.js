@@ -1,11 +1,11 @@
 export default {
-  proprs: ["styled", "title", "content"],
+  props: ["styled", "data"],
   computed: {
     style() {
       if (this.styled && this.styled.padding) {
-        return `padding: ${this.styled.padding};`;
+        return `padding: ${this.styled.padding}`;
       } else {
-        return `padding: 0;`;
+        return "padding: 0";
       }
     },
   },
