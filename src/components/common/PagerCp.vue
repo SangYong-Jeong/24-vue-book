@@ -64,9 +64,9 @@ export default {
   },
   methods: {
     changePage(e) {
-      const _page = e.currentTarget.dataset["page"];
-      if (this.page != _page) {
-        this.$store.dispatch("ACT_BOOKS", _page);
+      const page = e.currentTarget.dataset["page"];
+      if (this.page != page) {
+        this.$store.dispatch("ACT_BOOKS", { page });
       }
     },
   },

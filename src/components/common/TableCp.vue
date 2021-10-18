@@ -17,7 +17,7 @@
         <TrCp v-for="book in GET_BOOKS.books" :key="book.idx" :book="book" />
       </tbody>
     </table>
-    <PagerCp :pager="GET_BOOKS.pager" />
+    <PagerCp v-show="isPager" :pager="GET_BOOKS.pager" />
   </div>
 </template>
 
@@ -30,6 +30,7 @@ import { mapGetters } from "vuex";
 export default {
   name: "TableCp",
   components: { TrCp, PagerCp },
+  props: ["isPager"],
   computed: {
     ...mapGetters(["GET_BOOKS"]),
   },
@@ -37,6 +38,7 @@ export default {
     this.$store.dispatch("ACT_LOADING", true);
   },
   updated() {
+    console.log(this.GET_BOOKS.pager);
     this.$store.dispatch("ACT_LOADING", false);
   },
 };
