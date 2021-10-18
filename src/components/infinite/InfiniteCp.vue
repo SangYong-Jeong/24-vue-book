@@ -38,7 +38,6 @@ export default {
     });
   },
   updated() {
-    console.log("update");
     this.$store.dispatch("ACT_LOADING", false);
   },
   methods: {
