@@ -1,7 +1,7 @@
 <template>
   <div class="info-wrap" :style="style">
-    <div class="title">{{ data.title }}</div>
-    <div class="content">{{ data.content }}</div>
+    <div class="title">{{ datas.title }}</div>
+    <div class="content">{{ datas.content }}</div>
   </div>
 </template>
 

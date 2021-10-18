@@ -1,13 +1,13 @@
 <template>
   <section class="wrapper view-wrapper">
     <h3 class="title">도서 상세 내용</h3>
-    <InfoTxt :data="title" :styled="styled" />
-    <InfoTxt :data="writer" :styled="styled" />
-    <InfoTxt :data="date" :styled="styled" />
-    <InfoTxt :data="status" :styled="styled" />
-    <InfoTxt :data="content" :styled="styled" />
-    <InfoImg :data="cover" :styled="styled" v-show="cover" />
-    <InfoImg :data="upfile" :styled="styled" v-show="upfile" />
+    <InfoTxt :datas="title" :styled="styled" />
+    <InfoTxt :datas="writer" :styled="styled" />
+    <InfoTxt :datas="date" :styled="styled" />
+    <InfoTxt :datas="status" :styled="styled" />
+    <InfoTxt :datas="content" :styled="styled" />
+    <InfoImg :datas="cover" :styled="styled" v-show="cover" />
+    <InfoImg :datas="upfile" :styled="styled" v-show="upfile" />
     <div class="bt-wrap">
       <button class="btn btn-success bt-back" @click="goBack">리스트</button>
     </div>
