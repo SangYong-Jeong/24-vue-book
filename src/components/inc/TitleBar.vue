@@ -10,7 +10,7 @@
         Node.js / Express / MySQL을 활용한 도서 관리 시스템을 확인하시려면
         아래의 링크를 클릭하세요.
       </p>
-      <b-button variant="primary" href="//3.37.135.153" target="_blank">
+      <b-button variant="primary" href="//moongtak.com" target="_blank">
         Express 도서 관리 시스템 바로가기
       </b-button>
     </b-jumbotron>
